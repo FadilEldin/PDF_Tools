@@ -313,6 +313,12 @@ def unlock_pdf(input_pdf, output_pdf, password):
         print(f"Failed to unlock PDF: {e}")
 # ------------------------------------------------------------------
 def pdf_to_word(input_pdf, output_docx):
+    # pip install pdf2docx --user
+    from pdf2docx import Converter
+    c = Converter(input_pdf)
+    c.convert(output_docx)
+    c.close()
+    return
     # pip install aspose-words
     # Aspose.Words is a paid library, and its advanced features may require a license for commercial use.
     # Will add to the PDF :
