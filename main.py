@@ -431,14 +431,14 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     #  Merge
-    # f1='PDF_TEST/OUT/SPLIT/page_1.pdf'
-    # f2='PDF_TEST/OUT/SPLIT/page_2.pdf'
-    # f3='PDF_TEST/OUT/SPLIT/page_3.pdf'
-    # f4='PDF_TEST/OUT/SPLIT/page_4.pdf'
-    # input_pdfs = [f1,f2, f3, f4]
-    # output_pdf = 'PDF_TEST/X/MERGED/merged.pdf'
-    # merge_pdfs(input_pdfs, output_pdf)
-    # exit()
+    f1='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.pdf'
+    f2='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_2.pdf'
+    f3='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_3.pdf'
+
+    input_pdfs = [f1,f2, f3]
+    output_pdf = 'C:/Users/Fadil/Downloads/TEST/Name_Change.pdf'
+    merge_pdfs(input_pdfs, output_pdf)
+    exit()
     #==================================================================================================================================
     #  Rotate
     # input_pdf = 'PDF_TEST/sample.pdf'
@@ -454,8 +454,8 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     # Do not uncomment next 2 lines
-    input_color='Red'
-    rgb_color = color_picker(input_color)
+    # input_color='Red'
+    # rgb_color = color_picker(input_color)
 
     # Text Watermark
     # input_pdf = 'PDF_TEST/sample.pdf'
@@ -485,10 +485,10 @@ if __name__ == '__main__':
     # exit()
     # ==================================================================================================================================
     # JPG to PDF
-    # jpg_path = 'PDF_TEST/test.jpg'
-    # pdf_path = 'PDF_TEST/OUT/test.pdf'
-    # jpg_to_pdf(jpg_path, pdf_path)
-    # exit()
+    jpg_path = 'C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.jpg'
+    pdf_path = 'C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.pdf'
+    jpg_to_pdf(jpg_path, pdf_path)
+    exit()
     #==================================================================================================================================
     # PDF to JPG
     # pdf_path = 'PDF_TEST/sample.pdf'
