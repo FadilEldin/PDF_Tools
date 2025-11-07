@@ -431,14 +431,14 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     #  Merge
-    f1='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.pdf'
-    f2='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_2.pdf'
-    f3='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_3.pdf'
-
-    input_pdfs = [f1,f2, f3]
-    output_pdf = 'C:/Users/Fadil/Downloads/TEST/Name_Change.pdf'
-    merge_pdfs(input_pdfs, output_pdf)
-    exit()
+    # f1='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.pdf'
+    # f2='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_2.pdf'
+    # f3='C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_3.pdf'
+    #
+    # input_pdfs = [f1,f2, f3]
+    # output_pdf = 'C:/Users/Fadil/Downloads/TEST/Name_Change.pdf'
+    # merge_pdfs(input_pdfs, output_pdf)
+    # exit()
     #==================================================================================================================================
     #  Rotate
     # input_pdf = 'PDF_TEST/sample.pdf'
@@ -485,10 +485,10 @@ if __name__ == '__main__':
     # exit()
     # ==================================================================================================================================
     # JPG to PDF
-    jpg_path = 'C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.jpg'
-    pdf_path = 'C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.pdf'
-    jpg_to_pdf(jpg_path, pdf_path)
-    exit()
+    # jpg_path = 'C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.jpg'
+    # pdf_path = 'C:/Users/Fadil/Downloads/TEST/Name_Change_Maya_Ryan_1.pdf'
+    # jpg_to_pdf(jpg_path, pdf_path)
+    # exit()
     #==================================================================================================================================
     # PDF to JPG
     # pdf_path = 'PDF_TEST/sample.pdf'
@@ -511,10 +511,10 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     #  PDF To Word
-    # pdf_path = 'PDF_TEST/sample.pdf'
-    # word_path = 'PDF_TEST/OUT/sample.docx'
-    # pdf_to_word(pdf_path, word_path)
-    # exit()
+    pdf_path = 'C:/Users/Fadil/Downloads/Business Unit Leader Job Description.pdf'
+    word_path = 'C:/Users/Fadil/Downloads/Business Unit Leader Job Description.docx'
+    pdf_to_word(pdf_path, word_path)
+    exit()
     # ==================================================================================================================================
     #  PDF To PPTX
     # pdf_path = 'PDF_TEST/sample.pdf'
