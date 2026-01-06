@@ -491,10 +491,10 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     # PDF to JPG
-    # pdf_path = 'PDF_TEST/sample.pdf'
-    # output_folder = 'PDF_TEST/OUT/IMAGES'
-    # pdf_to_jpg(pdf_path, output_folder)
-    # exit()
+    pdf_path = 'C:/Users/Fadil/Downloads/vegas.pdf'
+    output_folder = 'C:/Users/Fadil/Downloads/'
+    pdf_to_jpg(pdf_path, output_folder)
+    exit()
     #==================================================================================================================================
     # Password Encrypt
     # input_pdf = 'PDF_TEST/sample.pdf'
