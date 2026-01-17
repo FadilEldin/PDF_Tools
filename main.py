@@ -504,17 +504,17 @@ if __name__ == '__main__':
     # exit()
     # ==================================================================================================================================
     # Unlock PDF
-    # encrypted_pdf = 'PDF_TEST/OUT/encrypted_test.pdf'
-    # unlocked_pdf = 'PDF_TEST/OUT/unlocked_test.pdf'
-    # password = 'mypass'
-    # unlock_pdf(encrypted_pdf, unlocked_pdf, password)
-    # exit()
+    encrypted_pdf = 'C:/Users/fadil/Downloads/Temporary_driverlicense_or_id.pdf'
+    unlocked_pdf = 'C:/Users/fadil/Downloads//unlocked_Temporary_driverlicense_or_id.pdf'
+    password = '17185066'
+    unlock_pdf(encrypted_pdf, unlocked_pdf, password)
+    exit()
     #==================================================================================================================================
     #  PDF To Word
-    pdf_path = 'C:/Users/Fadil/Downloads/Business Unit Leader Job Description.pdf'
-    word_path = 'C:/Users/Fadil/Downloads/Business Unit Leader Job Description.docx'
-    pdf_to_word(pdf_path, word_path)
-    exit()
+    # pdf_path = 'C:/Users/Fadil/Downloads/Business Unit Leader Job Description.pdf'
+    # word_path = 'C:/Users/Fadil/Downloads/Business Unit Leader Job Description.docx'
+    # pdf_to_word(pdf_path, word_path)
+    # exit()
     # ==================================================================================================================================
     #  PDF To PPTX
     # pdf_path = 'PDF_TEST/sample.pdf'
