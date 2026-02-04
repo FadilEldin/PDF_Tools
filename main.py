@@ -491,7 +491,7 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     # PDF to JPG
-    pdf_path = 'C:/Users/Fadil/Downloads/vegas.pdf'
+    pdf_path = 'C:/Users/Fadil/Downloads/oar-hq-v8_2 AWS detail.pdf'
     output_folder = 'C:/Users/Fadil/Downloads/'
     pdf_to_jpg(pdf_path, output_folder)
     exit()
