@@ -491,10 +491,10 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     # PDF to JPG
-    pdf_path = 'C:/Users/Fadil/Downloads/oar-hq-v8_2 AWS detail.pdf'
-    output_folder = 'C:/Users/Fadil/Downloads/'
-    pdf_to_jpg(pdf_path, output_folder)
-    exit()
+    # pdf_path = 'C:/Users/Fadil/Downloads/oar-hq-v8_2 AWS detail.pdf'
+    # output_folder = 'C:/Users/Fadil/Downloads/'
+    # pdf_to_jpg(pdf_path, output_folder)
+    # exit()
     #==================================================================================================================================
     # Password Encrypt
     # input_pdf = 'PDF_TEST/sample.pdf'
@@ -504,9 +504,16 @@ if __name__ == '__main__':
     # exit()
     # ==================================================================================================================================
     # Unlock PDF
-    encrypted_pdf = 'C:/Users/fadil/Downloads/Temporary_driverlicense_or_id.pdf'
-    unlocked_pdf = 'C:/Users/fadil/Downloads//unlocked_Temporary_driverlicense_or_id.pdf'
-    password = '17185066'
+    # Inspection:  9-character password. To create your password, use the 5-digit ZIP code of the Renewal Mailing Address
+    # and the last 4 characters of the Vehicle Identification Number (VIN) associated with the vehicle.
+    # Camry password 750715369
+    # FJ password    750718218
+    encrypted_pdf = 'C:/Users/fadil/Downloads/RenewalNotice_DVY0833.pdf'
+    unlocked_pdf = 'C:/Users/fadil/Downloads/Unlocked_2026_RenewalNotice_DVY0833.pdf'
+    password = '750715369'
+    encrypted_pdf = 'C:/Users/fadil/Downloads/RenewalNotice_CHZ4857.pdf'
+    unlocked_pdf = 'C:/Users/fadil/Downloads/Unlocked_2026_RenewalNotice_CHZ4857.pdf'
+    password = '750718218'
     unlock_pdf(encrypted_pdf, unlocked_pdf, password)
     exit()
     #==================================================================================================================================
