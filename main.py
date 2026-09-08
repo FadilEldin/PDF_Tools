@@ -11,6 +11,7 @@
 # PDF to Word
 # PDF to PPTX
 # HTML to PDF
+# Sep 2026 remove_link_from_pdf()
 #-----------------------------------------------
 def color_picker(color_name):
     color_dict = {
@@ -35,6 +36,40 @@ def color_picker(color_name):
         return color_dict[color_name]
     else:
         return "Color not found in the dictionary."
+#-----------------------------------------------
+def remove_link_from_pdf(input_pdf, output_pdf, link_text="http://abubaobalbagl.blogspot.ae/"):
+    import fitz
+    """
+    Remove specific text/link from all pages of a PDF
+    """
+    # Open the PDF
+    doc = fitz.open(input_pdf)
+
+    for page_num in range(len(doc)):
+        page = doc[page_num]
+
+        # Search for the link text
+        text_instances = page.search_for(link_text)
+
+        # Remove each instance
+        for inst in text_instances:
+            # Add white rectangle to cover the text
+            page.draw_rect(inst, color=(1, 1, 1), fill=(1, 1, 1))
+
+            # Alternatively, you can redact the text
+            # page.add_redact_annot(inst)
+
+        # If you want to completely remove annotations/links (not just text):
+        annots = page.annots()
+        if annots:
+            for annot in annots:
+                if link_text in str(annot.info.get('content', '')):
+                    page.delete_annot(annot)
+
+    # Save the modified PDF
+    doc.save(output_pdf)
+    doc.close()
+    print(f"Link removed and saved to {output_pdf}")
 #-----------------------------------------------
 def split_pdf(input_pdf, output_folder):
     #pip install PyPDF2
@@ -454,8 +489,8 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     # Do not uncomment next 2 lines
-    # input_color='Red'
-    # rgb_color = color_picker(input_color)
+    input_color='Red'
+    rgb_color = color_picker(input_color)
 
     # Text Watermark
     # input_pdf = 'PDF_TEST/sample.pdf'
@@ -508,14 +543,14 @@ if __name__ == '__main__':
     # and the last 4 characters of the Vehicle Identification Number (VIN) associated with the vehicle.
     # Camry password 750715369
     # FJ password    750718218
-    encrypted_pdf = 'C:/Users/fadil/Downloads/RenewalNotice_DVY0833.pdf'
-    unlocked_pdf = 'C:/Users/fadil/Downloads/Unlocked_2026_RenewalNotice_DVY0833.pdf'
-    password = '750715369'
-    encrypted_pdf = 'C:/Users/fadil/Downloads/RenewalNotice_CHZ4857.pdf'
-    unlocked_pdf = 'C:/Users/fadil/Downloads/Unlocked_2026_RenewalNotice_CHZ4857.pdf'
-    password = '750718218'
-    unlock_pdf(encrypted_pdf, unlocked_pdf, password)
-    exit()
+    # encrypted_pdf = 'C:/Users/fadil/Downloads/RenewalNotice_DVY0833.pdf'
+    # unlocked_pdf = 'C:/Users/fadil/Downloads/Unlocked_2026_RenewalNotice_DVY0833.pdf'
+    # password = '750715369'
+    # encrypted_pdf = 'C:/Users/fadil/Downloads/RenewalNotice_CHZ4857.pdf'
+    # unlocked_pdf = 'C:/Users/fadil/Downloads/Unlocked_2026_RenewalNotice_CHZ4857.pdf'
+    # password = '750718218'
+    # unlock_pdf(encrypted_pdf, unlocked_pdf, password)
+    # exit()
     #==================================================================================================================================
     #  PDF To Word
     # pdf_path = 'C:/Users/Fadil/Downloads/Business Unit Leader Job Description.pdf'
@@ -527,5 +562,12 @@ if __name__ == '__main__':
     # pdf_path = 'PDF_TEST/sample.pdf'
     # pptx_path = 'PDF_TEST/OUT/sample.pptx'
     # pdf_to_pptx(pdf_path, pptx_path)
+    # exit()
+    #==================================================================================================================================
+    #  PDF To Word
+    input_pdf='C:/Users/fadil/Downloads/a.pdf'
+    output_pdf='C:/Users/fadil/Downloads/a_cleaned.pdf'
+    link_text="http://abuabdoalbagl.blogspot.ae/"
+    remove_link_from_pdf(input_pdf, output_pdf, link_text)
     # exit()
 # pip freeze > requirements.txt
