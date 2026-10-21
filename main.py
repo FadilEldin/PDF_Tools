@@ -526,10 +526,10 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     # PDF to JPG
-    # pdf_path = 'C:/Users/Fadil/Downloads/oar-hq-v8_2 AWS detail.pdf'
-    # output_folder = 'C:/Users/Fadil/Downloads/'
-    # pdf_to_jpg(pdf_path, output_folder)
-    # exit()
+    pdf_path = 'C:/Users/Fadil/Downloads/d.pdf'
+    output_folder = 'C:/Users/Fadil/Downloads/'
+    pdf_to_jpg(pdf_path, output_folder)
+    exit()
     #==================================================================================================================================
     # Password Encrypt
     # input_pdf = 'PDF_TEST/sample.pdf'
@@ -565,9 +565,9 @@ if __name__ == '__main__':
     # exit()
     #==================================================================================================================================
     #  PDF To Word
-    input_pdf='C:/Users/fadil/Downloads/a.pdf'
-    output_pdf='C:/Users/fadil/Downloads/a_cleaned.pdf'
-    link_text="http://abuabdoalbagl.blogspot.ae/"
-    remove_link_from_pdf(input_pdf, output_pdf, link_text)
+    # input_pdf='C:/Users/fadil/Downloads/a.pdf'
+    # output_pdf='C:/Users/fadil/Downloads/a_cleaned.pdf'
+    # link_text="http://abuabdoalbagl.blogspot.ae/"
+    # remove_link_from_pdf(input_pdf, output_pdf, link_text)
     # exit()
 # pip freeze > requirements.txt
